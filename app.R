@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(shinythemes)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -15,6 +16,9 @@ ui <- fluidPage(
     # Application title
     titlePanel("Old Faithful Geyser Data"),
 
+    # Add theme
+    theme = shinytheme("cyborg"),
+    
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
